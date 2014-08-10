@@ -1,0 +1,3 @@
+Example application for lesson 007
+
+See 007_rails_decoding_business_logic/README.md

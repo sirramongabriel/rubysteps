@@ -1,0 +1,7 @@
+<%= form_tag learning_session_path, method: :put do %>
+  <%= label_tag :note, 'Record a note related to the question' %>
+  <%= text_field_tag :note %>
+  <br/>
+  <%= hidden_field_tag :event, :mark_questions_as_answered %>
+  <%= submit_tag 'Record note' %>
+<% end %>

@@ -1,0 +1,7 @@
+<%= form_tag learning_session_path, method: :put do %>
+  <%= label_tag :lesson_number, 'What is the lesson number?' %>
+  <%= text_field_tag :lesson_number %>
+  <br/>
+  <%= hidden_field_tag :event, :record_questions %>
+  <%= submit_tag 'Choose lesson' %>
+<% end %>

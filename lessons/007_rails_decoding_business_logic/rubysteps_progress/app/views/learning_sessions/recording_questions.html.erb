@@ -1,0 +1,7 @@
+<%= form_tag learning_session_path, method: :put do %>
+  <%= label_tag :question, 'What is your question for this session?' %>
+  <%= text_field_tag :question %>
+  <br/>
+  <%= hidden_field_tag :event, :record_notes %>
+  <%= submit_tag 'Record question' %>
+<% end %>

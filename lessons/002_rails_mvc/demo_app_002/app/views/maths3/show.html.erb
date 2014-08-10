@@ -1,0 +1,5 @@
+<% @value ||= 0 %>
+
+<%= link_to "-", action: :subtract, num1: @value, num2: 1 %>
+<%= @value %>
+<%= link_to "+", action: :add, num1: @value, num2: 1 %>

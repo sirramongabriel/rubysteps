@@ -1,0 +1,8 @@
+<%= form_tag learning_session_path, method: :put do %>
+  <%= label_tag :question_answered, 'Was your question answered?' %>
+  <%= radio_button_tag :question_answered, 'Yes' %> Yes
+  <%= radio_button_tag :question_answered, 'No' %> No
+  <br/>
+  <%= hidden_field_tag :event, :finish_session %>
+  <%= submit_tag 'Mark questions as answered' %>
+<% end %>
